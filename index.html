@@ -20,8 +20,21 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
      <!-- End Bootstrap CSS Framework -->
+     <script src="js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="bootstrap-social.css">
+     <link rel="stylesheet" href="main.css">
 
-     <script src="https://kit.fontawesome.com/f8cfed5e2e.js" crossorigin="anonymous"></script>
+     
+     <script>
+               function validateForm() {
+                 var x = document.forms["myForm"]["fname"].value;
+                 if (x == "") {
+                   alert("Name must be filled out");
+                   return false;
+                 }
+               }
+               </script>
 
      <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
              support bookmarking. -->
@@ -61,11 +74,33 @@
           <!--JUMOBTRON-->
           <div class="jumbotron jumbotron-fluid text-center bg-white">
                <div class="container">
-                    <h1 class="display-2"><img src="logo2.png" class="main-logo" style="height:10rem;margin-right:10px;margin-top:-10px;"><p></i>API Superstore</h1></p>
+                    <h2 class="display-3"><img src="logo2.png" class="main-logo" style="height:10rem;margin-right:10px;margin-top:-10px;"><p>API Superstore</h2></p>
                     <p class="lead">We collect APIs from various sources and translate them into an easy-to-swallow format to allow you to efficiently access each website’s API without a second thought.</p>
-                    <a href="#" class="btn btn-danger my-2">Get started!</a>
-               </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" style="margin-bottom:20px;">
+          Get started!
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                API Superstore is set for release January 2020. Until then, feel free to join our community below to participate in discussions regarding upcoming features!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <a href="https://days.to/until/new-years-day"><button type="button" class="btn btn-danger">I'll be back later!</button></a>
+              </div>
+            </div>
           </div>
+        </div>
+
+
           <!-- TODO: Create an area to put the explainer video. -->
           <div class="embed-responsive embed-responsive-16by9">
                <iframe src="https://www.youtube.com/embed/L48g1ZWLMdo?vq=hd1080&modestbranding=1&showinfo=0&rel=0"
@@ -119,7 +154,18 @@
                     </div>
                </div>
           </div>
+<div class="sm-buttons">
+          <a class="btn btn-social-icon btn-twitter rounded-circle">
+               <span class="fa fa-twitter"></span>
+          </a>
+          <a class="btn btn-social-icon btn-facebook rounded-circle">
+               <span class="fa fa-facebook"></span>
+          </a>
+          <a class="btn btn-social-icon btn-linkedin rounded-circle">
+               <span class="fa fa-linkedin"></span>
+          </a>
 
+                    </div>
 
      </div>
 
